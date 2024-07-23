@@ -13,22 +13,7 @@ This project automates the testing of subscription packages on the STC TV websit
    ```sh
    git clone https://github.com/aymanalali/automation-assignment.git
    ```
-2. **Navigate to the project directory**:
-   ```sh
-   cd automation-assignment
-   ```
-3. **Build the project**:
-   ```sh
-   mvn clean install
-   ```
-
-## Running Tests
-1. **Run all tests**:
-   ```sh
-   mvn test
-   ```
-2. **View the test report**:
-   - After running the tests, the reports can be found in the `test-output` directory.
+   
 
 ## Test Cases
 
@@ -53,13 +38,15 @@ This project automates the testing of subscription packages on the STC TV websit
 - **Validation**: Confirms the added device details like id, name, createdAt, year, price, etc.
 
 ## Reports
-- Test reports are generated in the `test-output` directory.
+- Test reports are generated in the master branch directly.
 - The reports provide detailed information on the test results, including pass/fail status for each test case.
 
 ## Important Points
 - Developed using Java, TestNG, and Rest Assured.
 - Ensured adherence to proper coding standards.
 - Comprehensive test coverage for both frontend and API functionalities.
+- api test path is: src/test/java/com/Intigral/tests/ApiTest.java
+- Frontend Test path is: src/test/java/com/Intigral/tests/FrontendTest.java
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
