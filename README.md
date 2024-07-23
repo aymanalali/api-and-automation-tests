@@ -18,24 +18,73 @@ This project automates the testing of subscription packages on the STC TV websit
 ## Test Cases
 
 ### Frontend Test
-- **URL**: https://subscribe.stctv.com/sa-en
-- **Validation**: Checks subscription packages, types, prices, and currencies for Saudi Arabia, Kuwait, and Bahrain.
+1. Navigate to the following URL https://subscribe.stctv.com/sa-en  
+2. Generate automated test to validate the Subscription Packages – Type & Price and Currency for all Countries (SA / 
+Kuwait and Baharin)
+3- Done using selenium among other frameworks 
 
 ### API Test
-- **Endpoint**: https://api.restful-api.dev/objects
-- **Request Payload**:
-  ```json
-  {
-    "name": "Apple Max Pro 1TB",
-    "data": {
-      "year": 2023,
-      "price": 7999.99,
-      "CPU model": "Apple ARM A7",
-      "Hard disk size": "1 TB"
-    }
-  }
-  ```
-- **Validation**: Confirms the added device details like id, name, createdAt, year, price, etc.
+Sure, here's the explanation in a clearer and more understandable point form:
+
+---
+
+**Automated REST API Testing Project**
+
+**Objective:**
+Construct an automated test framework to test an Api to validate adding new devices using Rest Assured.
+
+**Tools Used:**
+- Programming Language: Java
+- Testing Framework: Rest Assured with unit testing frameworks
+
+**Tasks:**
+
+1. **API Endpoint:**
+   - `https://api.restful-api.dev/objects`
+
+2. **Create Automation Script:**
+   - **Add New Device:**
+     - **Sample Request Payload:**
+       ```json
+       {
+         "name": "Apple Max Pro 1TB",
+         "data": {
+           "year": 2023,
+           "price": 7999.99,
+           "CPU model": "Apple ARM A7",
+           "Hard disk size": "1 TB"
+         }
+       }
+       ```
+     - **Sample Response:**
+       ```json
+       {
+         "id": "ff8081818fb998eb018fe89df1604c81",
+         "name": "Apple Max Pro 1TB",
+         "createdAt": "2021-06-05T13:36:56.161+00:00",
+         "data": {
+           "year": 2023,
+           "price": 7999.99,
+           "CPU model": "Apple ARM A",
+           "Hard disk size": "1 TB"
+         }
+       }
+       ```
+
+3. **Validation:**
+   - Validate the response to ensure the following fields are correct and not null:
+     - `id`
+     - `name`
+     - `createdAt`
+     - `year`
+     - `price`
+     - `CPU model`
+     - `Hard disk size`
+
+4. **Generate Report:**
+   - Create a report indicating the pass/fail status of the test cases via TestNG.
+
+
 
 ## Reports
 - Test reports are generated in the master branch directly.
