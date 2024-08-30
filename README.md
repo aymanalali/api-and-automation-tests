@@ -24,9 +24,7 @@ Kuwait and Baharin)
 3- Done using selenium among other frameworks 
 
 ### API Test
-Sure, here's the explanation in a clearer and more understandable point form:
 
----
 
 **Automated REST API Testing Project**
 
